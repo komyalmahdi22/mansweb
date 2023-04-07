@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+   <head>
+    <link rel="stylesheet" href="project1.css">
+   
+  <title></title>
+   </head>
+   <body>
+    
+    <header></header>
+
+    <nav class="navbar">
+      <button 
+      id="dark-mode-toggle" 
+      class="dark-mode-toggle"
+      >
+        <span class="button_top">
+          <span id="mode-change">DARK MODE</span>
+        </span>
+      </button>
+  
+      <a href="home.html" class="nav-space"><img src="lulogo-removebg-preview.png" alt="lol" class="img-nav"></a>
+      
+      <a href="#" class="first-link">Home</a>
+      <a href="#">Marks</a>
+      <a href="#">Lectures</a>
+      <a href="#">Schedule</a>
+      <a href="#">Account</a>
+    </nav>
+
+    <main>
+  
+        <div class="wrapper"> 
+          <form>
+            <div>
+            
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for subject code.." title="Type in subject code..">
+          </div>
+        </form>
+        
+      <table border="2" id="myTable" >
+        <caption><h1>Semester Three Marks </h1>
+        </caption>
+         <thead >
+            <tr >
+               
+               <th>Code</th>
+               <th>Course Name</th>
+               <th>Credits</th>
+               <th>Status</th>
+               <th>Date</th>
+               <th class="hide">Attendance (5%)</th>
+               <th class="hide">Class Assigments (5%)</th>
+               <th colspan="2" class="hide">Quizes 1&2 (20%)</th>              
+               <th class="hide">Labs (5%)</th>
+               <th class="hide">Partials (20%)</th>
+               <th class="hide">Finals (40%)</th>
+               <th class="hide">Presentations (5%)</th>
+               <th colspan="2" onclick=" toggleColumns()" >Total Marks (100%)</th>
+               
+               
+               
+            </tr>
+         </thead>
+         <tbody >
+            <tr  >
+               
+               <td>I2204</td>
+               <td>Imperative Programming</td>
+               <td>5</td>
+               <td>Failed</td>
+               <td>12/2/2023</td>
+               <td class="hide">0</td>
+               <td class="hide">0</td>
+               <td class="hide">0</td>
+               <td class="hide">2</td>
+               <td class="hide">3</td>
+               <td class="hide">0</td>
+               <td class="hide">0</td>
+               <td class="hide">4</td>
+               <td>10</td>
+               <td>F</td>
+            </tr>
+            <tr >
+                
+                
+               <td>I2201</td>
+               <td>Web Development</td>
+               <td>4</td>
+               <td>Passed</td>
+               <td >12/2/2023</td>
+               <td class="hide">5</td>
+               <td class="hide">5</td>
+               <td class="hide">6</td>
+               <td class="hide">7</td>
+               <td class="hide">4</td>
+               <td class="hide">16</td>
+               <td class="hide">33</td>
+               <td class="hide">5</td>
+               <td>81</td>
+               <td>B</td>
+             </tr>
+             <tr >
+                
+                
+               
+                <td>I2202</td>
+                <td>Computer Organization</td>
+                <td>4</td>
+                <td>Passed</td>
+                <td>13/2/2023</td>
+                <td class="hide">5</td>
+                <td class="hide">5</td>
+               <td class="hide">7</td>
+               <td class="hide">9</td>
+               <td class="hide">5</td>
+               <td class="hide">13</td>
+               <td class="hide">30</td>
+               <td class="hide">5</td>
+               <td>79</td>
+               <td>B-</td>
+             </tr>
+             <tr >
+                
+                
+                
+                <td>I2203</td>
+                <td>Operating System</td>
+                <td>4</td>
+                <td>Passed</td>
+                <td>13/2/2023</td>
+                <td class="hide">5</td>
+                <td class="hide">4</td>
+               <td class="hide">10</td>
+               <td class="hide">9</td>
+               <td class="hide">3</td>
+               <td class="hide">16</td>
+               <td class="hide">33</td>
+               <td class="hide">3</td>
+               <td >84</td>
+               <td>B+</td>
+             </tr>
+             <tr >
+                
+                
+                <td>S2250</td>
+                <td>Statistics</td>
+                <td>4</td>
+                <td >Passed</td>
+                <td >14/2/2023</td>
+                <td class="hide">5</td>
+                <td class="hide">5</td>
+               <td class="hide">5</td>
+               <td class="hide">10</td>
+               <td  rowspan="4"  style="background-color: var(--dark-purple); color: var(--white); font-weight:bold; " class="hide"> No Lab </td>
+               <td class="hide">15</td>
+               <td class="hide">40</td>
+               <td class="hide">5</td>
+               <td>90</td>
+               <td>A</td>
+             </tr>
+             <tr >
+                
+                
+                <td>I2205</td>
+                <td>Graphs</td>
+                <td>3</td>
+                <td>Passed</td>
+                <td >15/2/2023</td>
+                <td class="hide">5</td>
+                <td class="hide">5</td>
+               <td class="hide">9</td>
+               <td class="hide">9</td>
+               <td class="hide">17</td>
+               <td class="hide">20</td>
+               <td class="hide">1</td>
+               <td>67</td>
+               <td>C</td>
+               
+             </tr>
+             <tr >
+            
+                <td>I2231</td>
+                <td>Operating Research</td>
+                <td>3</td>
+                <td  >Failed</td>
+                
+                <td>15/2/2023</td>
+                <td class="hide">5</td>
+                <td class="hide">5</td>
+               <td class="hide" >5</td>
+               <td class="hide">0</td>
+               <td class="hide">0</td>
+               <td class="hide">5</td>
+               <td class="hide">4</td>
+               <td>24</td>
+               <td>F</td>
+               
+             </tr>
+             <tr >
+               
+                
+                <td>M2250</td>
+                <td>Arithmetics in Z</td>
+                <td>3</td>
+                <td>Passed</td>
+                <td>15/2/2023</td>
+                <td class="hide">5</td>
+                <td class="hide">5</td>
+               <td class="hide">8</td>
+               <td class="hide">9</td>
+               <td class="hide">9</td>
+               <td class="hide">40</td>
+               <td class="hide">5</td>
+               <td>87</td>
+               <td>A-</td>
+              
+             </tr>
+             
+            </tbody>
+         
+      </table>
+        </div>
+ 
+        <div>
+          <p class="p"></p>
+        </div>
+
+        <!--hbi-->
+        <script src="project1.js" ></script>
+        <script src="darkmode.js" ></script>
+      
+        <script>
+         function myFunction() {
+
+           // Declare variables
+           var input, filter, table, tr, td, i, txtValue;
+           input = document.getElementById("myInput");
+           filter = input.value.toUpperCase();
+           table = document.getElementById("myTable");
+           tr = table.getElementsByTagName("tr");
+
+           // Loop through all table rows, and hide those who don't match the search query
+           for (i = 0; i < tr.length; i++) {
+             td = tr[i].getElementsByTagName("td")[0];
+             if (td) {
+               txtValue = td.textContent || td.innerText;
+               if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                 tr[i].style.display = "";
+               } else {
+                 tr[i].style.display = "none";
+               }
+             }
+           }
+         }
+
+         
+         function show() {
+  var x = document.getElementById("gpa");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+         </script>
+    </main>
+    <footer class="footer">
+      
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item"><a href="mailto:mft60247@gmail.com" class="email-link">lu56574@gmail.com</a> </li>
+  
+      </ul>
+      <p>&copy;2023  | All Rights Reserved</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   </body>
+</html>
